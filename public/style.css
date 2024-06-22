@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    margin: 20px 0;
+}
+
+
+.main{
+    border: 8px solid #dddddd;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name{
+    background-color: #ebebeb;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    display: flex;
+    color: #7e7e7e;
+}
+
+.name > span{
+    color: #bbb;
+
+}
+
+
+.name-input{
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: #7e7e7e;
+    background-color: #ebebeb;
+    flex-grow: 1;
+    margin: 0px 12px;
+}
+
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    height: 600px;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.message-left, .message-right{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.message-left{
+    background-color: #fff;
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    box-shadow: -2px 2px 4px #dcdcdc;
+
+}
+
+
+.message-right{
+    background-color: #2d2d2d;
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    box-shadow: -2px 2px 4px #dcdcdc;
+    color: #f6f6f6;
+}
+
+.message-left > span, .message-right > span{
+    font-size: 12px;
+    display: block;
+    font-style: italic;
+    margin-top: 4px;
+
+}
+
+.feedback{
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+
+.message-form{
+    display: flex;
+    width: 400px;
+}
+
+.message-input{
+    height: 48px;
+    width: 85%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    background-color: #fff;
+}
+
+.send-button{
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    padding: 0px 20px 0px 0px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.v-divider{
+    height: 48px;
+    width: 2px;
+    background-color: #f6f6f6;
+}
+
+.clients-total{
+    margin: 20px 0;
+    color: #7e7e7e;
+    text-align: center;
+}
